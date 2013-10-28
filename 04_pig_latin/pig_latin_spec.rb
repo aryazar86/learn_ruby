@@ -23,24 +23,24 @@ describe "#translate" do
     s.should == "errychay"
   end
 
-  # it "translates two words" do
-  #   s = translate("eat pie")
-  #   s.should == "eatay iepay"
-  # end
+  it "translates two words" do
+    s = translate("eat pie")
+    s.should == "eatay iepay"
+  end
 
-  # it "translates a word beginning with three consonants" do
-  #   translate("three").should == "eethray"
-  # end
+  it "translates a word beginning with three consonants" do
+    translate("three").should == "eethray"
+  end
 
-  # it "counts 'sch' as a single phoneme" do
-  #   s = translate("school")
-  #   s.should == "oolschay"
-  # end
+  it "counts 'sch' as a single phoneme" do
+    s = translate("school")
+    s.should == "oolschay"
+  end
 
-  # it "counts 'qu' as a single phoneme" do
-  #   s = translate("quiet")
-  #   s.should == "ietquay"
-  # end
+  it "counts 'qu' as a single phoneme" do
+    s = translate("quiet")
+    s.should == "ietquay"
+  end
 
   # it "counts 'qu' as a consonant even when it's preceded by a consonant" do
   #   s = translate("square")

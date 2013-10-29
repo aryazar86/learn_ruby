@@ -42,15 +42,15 @@ describe "#translate" do
     s.should == "ietquay"
   end
 
-  # it "counts 'qu' as a consonant even when it's preceded by a consonant" do
-  #   s = translate("square")
-  #   s.should == "aresquay"
-  # end
+  it "counts 'qu' as a consonant even when it's preceded by a consonant" do
+    s = translate("square")
+    s.should == "aresquay"
+  end
 
-  # it "translates many words" do
-  #   s = translate("the quick brown fox")
-  #   s.should == "ethay ickquay ownbray oxfay"
-  # end
+  it "translates many words" do
+    s = translate("the quick brown fox")
+    s.should == "ethay ickquay ownbray oxfay"
+  end
 
   # Extra challenges:
   # Write tests and get them to pass for:

@@ -38,7 +38,7 @@ describe RPNCalculator do
   before do
     @calculator = RPNCalculator.new
   end
-
+2
   it "adds two numbers" do
     calculator.push(2)
     calculator.push(3)
@@ -56,7 +56,7 @@ describe RPNCalculator do
     calculator.value.should == 9
   end
 
-  it "subtracts the second number from the first number" do
+  it "subtracts the sec2ond number from the first number" do
     calculator.push(2)
     calculator.push(3)
     calculator.minus

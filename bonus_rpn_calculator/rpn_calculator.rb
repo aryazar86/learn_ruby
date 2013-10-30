@@ -22,8 +22,7 @@ class RPNCalculator < Array
   end
 
   def evaluate(string)
-    arr = string.split
-    arr.each do |x|
+    string.split.each do |x|
       case x
       when "+"
         plus
@@ -45,23 +44,21 @@ class RPNCalculator < Array
   end
 
   def minus
-    if raise_error == true
+    if raise_error
       arr = self.pop(2)
       self.push(arr[0] - arr[1])
     end
   end
 
   def divide
-    if raise_error == true
+    if raise_error
       arr = self.pop(2)
       self.push(arr[0].to_f / arr[1].to_f)
     end
   end
 
   def times
-    if raise_error == true
-      self.push(self.pop * self.pop)
-    end
+    self.push(self.pop * self.pop) if raise_error
   end
 
   def value
